@@ -170,7 +170,7 @@
         const maxSparkles = 30;
         
         const floatingHearts = [];
-        const maxFloatingHearts = 8;
+        const maxFloatingHearts = 15;
         
         function createFloatingHeart() {
             if (floatingHearts.length < maxFloatingHearts && heartComplete) {
@@ -216,7 +216,7 @@
                 ctx.rotate(heart.rotation);
                 ctx.scale(heart.size / 20, heart.size / 20);
                 
-
+                // Draw heart shape
                 ctx.beginPath();
                 ctx.moveTo(0, 3);
                 ctx.bezierCurveTo(-5, -2, -15, -2, -15, 5);
